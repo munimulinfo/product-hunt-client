@@ -1,10 +1,14 @@
 
+import { Outlet } from "react-router-dom";
+import Navbar from "../Shared/Navbar/Navbar";
+
 const Main = () => {
-    return (
-        <div>
-            Hello Doc HOuse Start  Yeasin Arafat
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Main;
