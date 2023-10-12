@@ -12,7 +12,7 @@ const OurExpertDoctors = () => {
           sunt explicabo.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-8 w-10/12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-8 lg:w-10/12 mx-auto">
         <div className="border border-gray-600 p-3 space-y-4 rounded-md">
           <img
             className="rounded-md"
