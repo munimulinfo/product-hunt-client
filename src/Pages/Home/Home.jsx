@@ -1,5 +1,6 @@
 
-import OurExpertDoctors from "../../Shared/Navbar/OurExpertDoctors/OurExpertDoctors";
+import Footer from "../../Shared/Footer/Footer";
+import OurExpertDoctors from "../../Shared/OurExpertDoctors/OurExpertDoctors";
 import PatientsSays from "../../Shared/PatientsSays/PatientsSays";
 import image from "../../assets/banner.png";
 import Contact from "../../components/Contact";
@@ -35,7 +36,8 @@ const Home = () => {
           <Services />
           <PatientsSays/>
           <OurExpertDoctors/>
-          <Contact/>
+      <Contact />
+      <Footer/>
     </div>
   );
 };

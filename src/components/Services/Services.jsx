@@ -28,27 +28,9 @@ const Services = () => {
 
             <div className="border border-gray-300 flex justify-between my-3 rounded-lg">
               <CareerTab/>
-              {/* <div className="py-4 px-3 text-xl font-bold bg-orange-400 rounded-md text-black">
-                Cavity Protection
-              </div>
-              <div className="py-4 px-3 text-xl font-bold text-black">
-                Cosmetic Dentisty
-              </div>
-              <div className="py-4 px-3 text-xl font-bold text-black">
-                Oral Surgery
-              </div> */}
             </div>
           </div>
           {/* 2nd div  */}
-          {/* <div>
-            <img
-              className="w-[590px] h-[260px] rounded-lg"
-              // src={den}
-              // alt=""
-              src="https://img.freepik.com/free-photo/white-teeth_144627-6525.jpg?w=740&t=st=1691387606~exp=1691388206~hmac=c86871e237ea9f8a0b56fadfe117a71bd2b5020f1b473d126c319d043d23d505"
-              alt=""
-            />
-          </div> */}
           {/* 3 rd div  */}
           <div className="space-y-2">
             <h1 className="text-3xl font-bold text-black">
@@ -73,8 +55,8 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="my-16 text-white md:flex justify-around md:px-14 md:ml-2 gap-5">
-        <div className="flex bg-[#07332F] px-8 py-9 gap-5 rounded-md w-80">
+      <div className="my-16 text-white md:flex justify-around md:px-14 md:ml-2 gap-5 md:space-t-0 space-y-3">
+        <div className="flex bg-[#07332F] px-8 py-9 gap-5 rounded-md lg:w-80 w-full">
           <div className="text-3xl">
             <FaStopwatch />
           </div>
@@ -86,7 +68,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex bg-[#fc996e] px-8 py-9 gap-5 rounded-md w-80">
+        <div className="flex bg-[#fc996e] px-8 py-9 gap-5 rounded-md lg:w-80 w-full">
           <div className="text-3xl">
             <FaLocationArrow />
           </div>
@@ -98,7 +80,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex bg-[#07332F] px-8 py-9 gap-5 rounded-md w-80">
+        <div className="flex bg-[#07332F] px-8 py-9 gap-5 rounded-md lg:w-80 w-full">
           <div className="text-3xl">
             <FaPhone />
           </div>
