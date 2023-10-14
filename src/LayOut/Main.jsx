@@ -1,10 +1,10 @@
 
 const Main = () => {
-    return (
-        <div>
-            Hello Doc HOuse Start
-        </div>
-    );
+  return (
+    <div>
+
+    </div>
+  );
 };
 
 export default Main;
