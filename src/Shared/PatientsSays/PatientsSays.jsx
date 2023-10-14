@@ -12,11 +12,12 @@ const PatientsSays = () => {
           </p>
         </div>
         <div className="md:flex gap-5 w-10/12 mx-auto">
-          <div className="text-center">1</div>
-          <div className="text-center">2</div>
+       
         </div>
+        
       </div>
     );
 };
 
 export default PatientsSays;
+
