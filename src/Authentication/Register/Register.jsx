@@ -79,7 +79,7 @@ const Register = () => {
                             placeholder="Enter your Name"
                             className="input input-bordered"
                         />
-                        {errors.email && (
+                        {errors.name && (
                             <span className="text-rose-500 animate-pulse">
                                 please provide your User Name
                             </span>
