@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-bold text-2xl">Doc House Services</h1>
+          <h1 className="font-bold text-2xl">Services</h1>
           <div className="space-y-2 mt-2">
             <p>Pediatric Clinic</p>
             <p>Diagnosis Clinic</p>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-bold text-2xl">QWorking Hours</h1>
+          <h1 className="font-bold text-2xl">Working Hours</h1>
           <div className="space-y-2 mt-2">
             <p>Monday - 10 am to 7 pm</p>
             <p>Tuesday - 10 am to 7 pm</p>
