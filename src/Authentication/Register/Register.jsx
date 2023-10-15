@@ -23,6 +23,7 @@ const Register = () => {
     };
 
     const { register, handleSubmit, reset, formState: { errors }, } = useForm();
+
     const onSubmit = (data) => {
          setLoading(true);
          if (data.password == data.confirmPassword) {
@@ -44,8 +45,8 @@ const Register = () => {
                         })
                         .catch((err) => {
                             setError(err.message);
+                            setLoading(false);
                         });
-                    setLoading(false);
                 })
                 .catch((err) => {
                     setError(err.message);

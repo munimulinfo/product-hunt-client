@@ -1,4 +1,6 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+
+import Home from "../Pages/Home/Home";
 import Main from "../LayOut/Main";
 import Login from "../Authentication/Login/Login";
 import Register from "../Authentication/Register/Register";
@@ -8,6 +10,10 @@ import Register from "../Authentication/Register/Register";
        path: "/",
        element: <Main></Main>,
        children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        },
         {
           path: 'login',
           element: <Login></Login>
@@ -20,4 +26,4 @@ import Register from "../Authentication/Register/Register";
     },
   ]);
 
-  export default router;
+export default router;
