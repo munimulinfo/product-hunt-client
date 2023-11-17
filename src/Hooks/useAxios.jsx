@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    baseURL: "https://jobstack-backend-teal.vercel.app",
+    baseURL: "https://jobstack-backend.vercel.app",
 });
 const useAxios = () => {
     return [axiosSecure];

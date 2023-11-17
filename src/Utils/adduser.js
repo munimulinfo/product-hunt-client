@@ -1,10 +1,10 @@
-import axios from "axios";
-
+import useAxios from "../Hooks/useAxios";
  export const addUser = (user) => {
+  const [axiosSecure] = useAxios();
   const userData = {
     name: user?.displayName,
     email: user?.email,
     role: "user",
   };
-  axios.post("http://localhost:5100/users", userData);
+  axiosSecure.post("/users", userData);
 };

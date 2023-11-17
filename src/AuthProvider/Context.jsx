@@ -24,11 +24,6 @@ const Context = ({ children }) => {
       return signInWithPopup(auth, googleProvider);
     };
   
-    const emailVerification = (currentUser) => {
-      setLoading(true);
-      return sendEmailVerification(currentUser);
-    };
-  
     const resetPassword = (email) => {
       setLoading(true);
       return sendPasswordResetEmail(auth, email);
@@ -71,7 +66,6 @@ const Context = ({ children }) => {
       resetPassword,
       logOut,
       updateUserProfile,
-      emailVerification,
       emailUpdate,
       };
 

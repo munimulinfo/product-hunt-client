@@ -1,11 +1,11 @@
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey,
-  authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
-  storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId
+  apiKey: "AIzaSyCdwuC_1LmvSDAs7nHJ2-0B6jssly8PrtA",
+  authDomain: "instagram-c9210.firebaseapp.com",
+  projectId: "instagram-c9210",
+  storageBucket: "instagram-c9210.appspot.com",
+  messagingSenderId: "575661601754",
+  appId: "1:575661601754:web:79ed9bfe9970cbb1e646e3"
 
 };
 

@@ -1,6 +1,4 @@
 import { useForm } from "react-hook-form";
-import img1 from "../../assets/image/Frame (1).png";
-import img2 from "../../assets/image/Frame.png"
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaSkating } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/Context";
@@ -101,15 +99,12 @@ const Login = () => {
 
 
     return (
-        <div className="flex flex-col lg:flex-row md:gap-0 gap-10 min-h-screen justify-center items-center">
-            <div className="bg-[#07332F] px-4 lg:px-0  flex justify-center items-center min-h-screen w-full relative">
-                <img src={img1} className="md:w-2/4 mt-20 w-full" alt="img" />
-                <img src={img2} className="absolute top-0 right-0" alt="img" />
-            </div>
+        <div className=" min-h-screen flex flex-col justify-center items-center">
+            
             <div className="w-full h-full md:px-20 px-5 flex justify-center items-center ">
 
                 <form className="border border-[#F7A582] rounded-lg p-6 login-shadow" onSubmit={handleSubmit(onSubmit)} action="">
-                    <h1 className="text-2xl text-center mb-2 font-serif text-green-900 uppercase font-bold ">Sign in to DocHouse</h1>
+                    <h1 className="text-2xl text-center mb-2 font-serif text-green-900 uppercase font-bold ">Sign in to InstaGram</h1>
 
                     <div className="form-control">
                         <label className="label">
