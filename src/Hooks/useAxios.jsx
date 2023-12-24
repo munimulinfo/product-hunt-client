@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    baseURL: "https://jobstack-backend.vercel.app",
+  baseURL: "https://product-hunt-two-flax.vercel.app",
 });
 const useAxios = () => {
-    return [axiosSecure];
+  return [axiosSecure];
 };
 export default useAxios;

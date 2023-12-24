@@ -1,0 +1,58 @@
+[
+  {
+    "title": "James Cotton Shirt",
+    "image": "https://i.ibb.co/PgSb7Yq/download-1-removebg-preview.png",
+    "price": 300,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product1"
+  },
+  {
+    "title": "James Style Shirt",
+    "image": "https://i.ibb.co/cgvSkFC/download-removebg-preview.png",
+    "price": 200,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product2"
+  },
+  {
+    "title": "Floral T-Shirt",
+    "image": "https://i.ibb.co/8xQjw6r/images-1-removebg-preview.png",
+    "price": 400,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product3"
+  },
+  {
+    "title": "Formal Shirt",
+    "image": "https://i.ibb.co/YcTNp7S/images-removebg-preview.png",
+    "price": 500,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product 4"
+  },
+  {
+    "title": "Dollar T-Shirt",
+    "image": "https://i.ibb.co/BqSFD8j/download-3-removebg-preview.png",
+    "price": 400,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product5"
+  },
+  {
+    "title": "Looks T-Shirt",
+    "image": "https://i.ibb.co/2YKMWN1/images-2-removebg-preview.png",
+    "price": 300,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product6"
+  },
+  {
+    "title": "James Design Shirt",
+    "image": "https://i.ibb.co/Q6tDsGR/download-5-removebg-preview.png",
+    "price": 200,
+    "color": ["red", "blue", "pink", "white", "yeloow"],
+    "size": ["L", "M", "XL", "XXL"],
+    "category": "Product7"
+  }
+]

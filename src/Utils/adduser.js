@@ -1,5 +1,5 @@
 import useAxios from "../Hooks/useAxios";
- export const addUser = (user) => {
+export const addUser = (user) => {
   const [axiosSecure] = useAxios();
   const userData = {
     name: user?.displayName,
