@@ -1,15 +1,12 @@
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyCdwuC_1LmvSDAs7nHJ2-0B6jssly8PrtA",
-  authDomain: "instagram-c9210.firebaseapp.com",
-  projectId: "instagram-c9210",
-  storageBucket: "instagram-c9210.appspot.com",
-  messagingSenderId: "575661601754",
-  appId: "1:575661601754:web:79ed9bfe9970cbb1e646e3"
-
+  apiKey: "AIzaSyARAgS-PRkFE-Mt3UEP2tEN1-NoaWq4jZc",
+  authDomain: "product-hunt-1e645.firebaseapp.com",
+  projectId: "product-hunt-1e645",
+  storageBucket: "product-hunt-1e645.appspot.com",
+  messagingSenderId: "56984520696",
+  appId: "1:56984520696:web:e9825d055f2aafae59380d",
 };
 
 const app = initializeApp(firebaseConfig);
 export default app;
-
-

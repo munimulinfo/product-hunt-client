@@ -2,9 +2,12 @@ import React, { useContext } from "react";
 import { AuthContext } from "../AuthProvider/Context";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/download-removebg-preview.png";
+import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../Hooks/useCart";
 
 const navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
   const handleLogOut = () => {
     logOut()
       .then((result) => {
@@ -53,7 +56,14 @@ const navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-5  font-bold font-sans text-gray-600 ">
           <Link>HOME</Link>
           <Link>ABOUT</Link>
-          <Link>CONTACT US</Link>
+          <div className="indicator">
+            <div className="indicator-item indicator-top">
+              <div className="rounded-full px-2 py-1 bg-red-500 text-white">
+                {cart?.length || 0}
+              </div>
+            </div>
+            <FaShoppingCart className="text-4xl  text-lime-500"></FaShoppingCart>
+          </div>
         </ul>
       </div>
       <div className="navbar-end">

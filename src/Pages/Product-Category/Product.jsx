@@ -4,9 +4,17 @@ import { Link } from "react-router-dom";
 const Product = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("/public/product.json")
-      .then((res) => res.json())
-      .then((data) => setData(data));
+    fetch("/product.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => setData(data))
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+      });
   }, []);
 
   return (

@@ -68,50 +68,50 @@ const Login = () => {
       });
   };
 
-  const handelReset = () => {
-    const email = watch("email");
-    if (email) {
-      setLoading(true);
-      resetPassword(email)
-        .then(() => {
-          toast.success("Please Check Your Email", {
-            position: "top-center",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          });
-          setLoading(false);
-        })
-        .catch((err) => {
-          toast.error(err.message, {
-            position: "top-center",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          });
-          setLoading(false);
-        });
-    } else {
-      toast.error("Please Provide A Valid Email", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-    }
-  };
+  // const handelReset = () => {
+  //   const email = watch("email");
+  //   if (email) {
+  //     setLoading(true);
+  //     resetPassword(email)
+  //       .then(() => {
+  //         toast.success("Please Check Your Email", {
+  //           position: "top-center",
+  //           autoClose: 2000,
+  //           hideProgressBar: false,
+  //           closeOnClick: true,
+  //           pauseOnHover: true,
+  //           draggable: true,
+  //           progress: undefined,
+  //           theme: "light",
+  //         });
+  //         setLoading(false);
+  //       })
+  //       .catch((err) => {
+  //         toast.error(err.message, {
+  //           position: "top-center",
+  //           autoClose: 2000,
+  //           hideProgressBar: false,
+  //           closeOnClick: true,
+  //           pauseOnHover: true,
+  //           draggable: true,
+  //           progress: undefined,
+  //           theme: "light",
+  //         });
+  //         setLoading(false);
+  //       });
+  //   } else {
+  //     toast.error("Please Provide A Valid Email", {
+  //       position: "top-center",
+  //       autoClose: 3000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "light",
+  //     });
+  //   }
+  // };
 
   return (
     <div className=" min-h-screen flex flex-col justify-center items-center">
@@ -149,12 +149,9 @@ const Login = () => {
               <span className="label-text font-bold font-serif text-green-900">
                 Password
               </span>
-              <button
-                onClick={() => handelReset()}
-                className="label-text font-bold font-serif text-[#F7A582]"
-              >
+              <p className="label-text font-bold font-serif text-[#F7A582]">
                 Forgot password?
-              </button>
+              </p>
             </label>
 
             <input

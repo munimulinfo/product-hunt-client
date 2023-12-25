@@ -3,17 +3,28 @@ import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/Context";
 import useAxios from "../../Hooks/useAxios";
+import Swal from "sweetalert2";
+import useCart from "../../Hooks/useCart";
 
 const Productdetails = () => {
   const [details, setDetiails] = useState([]);
   const id = useParams();
   const { user } = useContext(AuthContext);
+  const [cart, refetch] = useCart();
   const [axiosSecure] = useAxios();
   const [quantity, setQuantity] = useState(1);
   useEffect(() => {
-    fetch("/public/product.json")
-      .then((res) => res.json())
-      .then((data) => setDetiails(data));
+    fetch("/product.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => setDetails(data))
+      .catch((error) => {
+        console.error("Error fetching product details:", error);
+      });
   }, [id]);
   const result = details.filter(
     (singleDetail) => singleDetail?.category === id?.category
@@ -40,15 +51,17 @@ const Productdetails = () => {
       useremail: user?.email,
     };
     axiosSecure
-      .post("http://localhost:5000/postcart", postCartData)
+      .post("/postcart", postCartData)
       .then((response) => {
         // Assuming a successful response indicates successful addition to cart
+
         Swal.fire({
           title: "Product Added to Cart!",
           text: "Your item has been successfully added to your cart.",
           icon: "success",
           confirmButtonText: "Great!",
         });
+        refetch();
       })
       .catch((error) => {
         // Handle any errors that occur during the POST request
